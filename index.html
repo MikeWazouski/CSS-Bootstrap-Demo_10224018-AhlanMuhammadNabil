@@ -4,165 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Learning Project</title>
-    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Inter Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
     <style>
-        /* Minimal custom styles for elements not covered by pure BS5 utilities */
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8fafc;
-            color: #334155;
-        }
-        .tag-code {
-            color: #db2777;
-            background-color: #f1f5f9;
-            padding: 0.15rem 0.4rem;
-            border-radius: 0.25rem;
-            font-family: var(--bs-font-monospace);
-            font-size: 0.875em;
-            border: 1px solid #e2e8f0;
-        }
+        body { background-color: #f4f6f9; }
+        .tag-code { font-family: monospace; color: #d63384; font-weight: 600; }
+        .code-box { background-color: #212529; color: #f8f9fa; border-radius: 0.375rem; padding: 1rem; }
     </style>
 </head>
 <body>
 
-    <main class="container py-5" style="max-width: 800px;">
-
-        <!-- Header -->
-        <header class="p-5 mb-4 bg-primary bg-gradient text-white rounded-4 shadow text-center">
-            <h1 class="display-6 fw-bold mb-2">🌐 HTML Learning Project</h1>
-            <p class="fs-5 opacity-75 mb-0">A comprehensive guide to HTML fundamentals</p>
+    <main class="container py-5">
+        
+        <header class="text-center mb-5">
+            <h1 class="display-5 fw-bold text-primary">🌐 HTML Learning Project</h1>
+            <p class="lead text-secondary">A comprehensive guide to HTML fundamentals</p>
         </header>
 
         <!-- Section 1: What is HTML? -->
-        <article class="card shadow-sm border-0 mb-4">
-            <section class="card-body p-4">
-                <h2 class="h5 border-bottom pb-2 mb-3 d-flex align-items-center text-dark fw-semibold">
-                    <span class="fs-4 me-2">🚀</span> What is HTML?
-                </h2>
-                <p class="text-secondary mb-3">HTML stands for HyperText Markup Language. It is the standard markup language for creating Web pages.</p>
+        <article class="card mb-4 shadow-sm border-0">
+            <header class="card-header bg-white pt-3 border-bottom-0">
+                <h2 class="h5 fw-bold mb-0"><span class="me-2">🚀</span> What is HTML?</h2>
+            </header>
+            <section class="card-body pt-2">
+                <h3 class="visually-hidden">Detail Informasi HTML</h3>
+                <p>HTML stands for HyperText Markup Language. It is the standard markup language for creating Web pages.</p>
                 
-                <aside class="alert alert-info border-start border-info border-4" role="alert">
-                    <h4 class="h6 text-info-emphasis fw-bold">Key Points:</h4>
-                    <ul class="mb-0 text-info-emphasis">
+                <aside class="alert alert-info border-start border-4 border-info bg-light">
+                    <h4 class="h6 fw-bold">Key Points:</h4>
+                    <ul class="mb-0">
                         <li>Standard markup language</li>
                         <li>Describes the structure of a Web page</li>
                         <li>Consists of a series of elements</li>
                     </ul>
                 </aside>
 
-                <p class="text-dark fw-semibold mt-4 mb-1">How HTML works:</p>
-                <p class="text-secondary mb-3">HTML elements tell the browser how to display the content.</p>
+                <p class="fw-bold mt-3 mb-2">How HTML works:</p>
+                <p>HTML elements tell the browser how to display the content.</p>
                 
-                <figure class="position-relative bg-dark text-light p-3 rounded overflow-auto shadow-inner m-0">
-                    <span class="badge bg-secondary position-absolute top-0 end-0 m-2 text-uppercase tracking-wider">HTML</span>
-                    <pre class="mb-0 font-monospace text-light"><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+                <figure class="code-box mb-0">
+                    <figcaption><span class="badge text-bg-secondary mb-2">HTML</span></figcaption>
+                    <pre class="m-0"><code><p>This is a paragraph.</p></code></pre>
                 </figure>
             </section>
         </article>
 
         <!-- Section 2: Basic HTML Structure -->
-        <article class="card shadow-sm border-0 mb-4">
-            <section class="card-body p-4">
-                <h2 class="h5 border-bottom pb-2 mb-3 d-flex align-items-center text-dark fw-semibold">
-                    <span class="fs-4 me-2">📄</span> Basic HTML Structure
-                </h2>
-                <p class="text-secondary mb-3">Every HTML document has a required structure:</p>
+        <article class="card mb-4 shadow-sm border-0">
+            <header class="card-header bg-white pt-3 border-bottom-0">
+                <h2 class="h5 fw-bold mb-0"><span class="me-2">📄</span> Basic HTML Structure</h2>
+            </header>
+            <section class="card-body pt-2">
+                <h3 class="visually-hidden">Struktur Dasar</h3>
+                <p>Every HTML document has a required structure:</p>
 
-                <figure class="position-relative bg-dark text-light p-3 rounded mb-4 overflow-auto shadow-inner">
-                    <span class="badge bg-secondary position-absolute top-0 end-0 m-2 text-uppercase">HTML</span>
-<pre class="mb-0 font-monospace text-light"><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Page Title&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;My First Heading&lt;/h1&gt;
-    &lt;p&gt;My first paragraph.&lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+                <figure class="code-box mb-3">
+                    <figcaption><span class="badge text-bg-secondary mb-2">HTML</span></figcaption>
+<pre class="m-0"><code><!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+  </body>
+</html></code></pre>
                 </figure>
 
-                <aside class="alert alert-info border-start border-info border-4 mb-0" role="alert">
-                    <h4 class="h6 text-info-emphasis fw-bold">Structure Breakdown:</h4>
-                    <ul class="mb-0 text-info-emphasis">
-                        <li class="mb-1"><span class="tag-code">&lt;!DOCTYPE html&gt;</span> Defines that this document is an HTML5 document</li>
-                        <li class="mb-1"><span class="tag-code">&lt;html&gt;</span> The root element of an HTML page</li>
-                        <li class="mb-1"><span class="tag-code">&lt;head&gt;</span> Contains meta information about the HTML page</li>
-                        <li><span class="tag-code">&lt;body&gt;</span> Defines the document's body</li>
+                <aside class="alert alert-info border-start border-4 border-info bg-light mb-0">
+                    <h4 class="h6 fw-bold">Structure Breakdown:</h4>
+                    <ul class="mb-0">
+                        <li><span class="tag-code"><!DOCTYPE html></span> Defines that this document is an HTML5 document</li>
+                        <li><span class="tag-code"><html></span> The root element of an HTML page</li>
+                        <li><span class="tag-code"><head></span> Contains meta information about the HTML page</li>
+                        <li><span class="tag-code"><body></span> Defines the document's body</li>
                     </ul>
                 </aside>
             </section>
         </article>
 
         <!-- Section 3: Essential HTML Tags -->
-        <article class="card shadow-sm border-0 mb-4">
-            <section class="card-body p-4">
-                <h2 class="h5 border-bottom pb-2 mb-3 d-flex align-items-center text-dark fw-semibold">
-                    <span class="fs-4 me-2">📌</span> Essential HTML Tags
-                </h2>
-                <figure class="table-responsive m-0">
-                    <table class="table table-hover align-middle mb-0">
-                        <thead class="table-light">
-                            <tr>
-                                <th>Tag</th>
-                                <th>Description</th>
-                                <th>Example</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><span class="tag-code">&lt;h1&gt;-&lt;h6&gt;</span></td>
-                                <td>Defines HTML headings</td>
-                                <td><code class="text-danger">&lt;h1&gt;Heading 1&lt;/h1&gt;</code></td>
-                            </tr>
-                            <tr>
-                                <td><span class="tag-code">&lt;p&gt;</span></td>
-                                <td>Defines a paragraph</td>
-                                <td><code class="text-danger">&lt;p&gt;Text&lt;/p&gt;</code></td>
-                            </tr>
-                            <tr>
-                                <td><span class="tag-code">&lt;a&gt;</span></td>
-                                <td>Defines a hyperlink</td>
-                                <td><code class="text-danger">&lt;a href="#"&gt;Link&lt;/a&gt;</code></td>
-                            </tr>
-                            <tr>
-                                <td><span class="tag-code">&lt;img&gt;</span></td>
-                                <td>Defines an image</td>
-                                <td><code class="text-danger">&lt;img src="pic.jpg"&gt;</code></td>
-                            </tr>
-                            <tr>
-                                <td><span class="tag-code">&lt;ul&gt;/&lt;ol&gt;</span></td>
-                                <td>Defines lists</td>
-                                <td><code class="text-danger">&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></td>
-                            </tr>
-                            <tr>
-                                <td><span class="tag-code">&lt;div&gt;</span></td>
-                                <td>Defines a section</td>
-                                <td><code class="text-danger">&lt;div&gt;Content&lt;/div&gt;</code></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </figure>
+        <article class="card mb-4 shadow-sm border-0">
+            <header class="card-header bg-white pt-3 border-bottom-0">
+                <h2 class="h5 fw-bold mb-0"><span class="me-2">📌</span> Essential HTML Tags</h2>
+            </header>
+            <section class="card-body pt-2">
+                <h3 class="visually-hidden">Tabel Tag Esensial</h3>
+                <table class="table table-bordered table-striped table-hover m-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col">Tag</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="tag-code"><h1>-<h6></span></td>
+                            <td>Defines HTML headings</td>
+                            <td><code><h1>Heading 1</h1></code></td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-code"><p></span></td>
+                            <td>Defines a paragraph</td>
+                            <td><code><p>Text</p></code></td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-code"><a></span></td>
+                            <td>Defines a hyperlink</td>
+                            <td><code><a href="#">Link</a></code></td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-code"><img></span></td>
+                            <td>Defines an image</td>
+                            <td><code><img src="pic.jpg"></code></td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-code"><ul>/<ol></span></td>
+                            <td>Defines lists</td>
+                            <td><code><ul><li>Item</li></ul></code></td>
+                        </tr>
+                        <tr>
+                            <td><span class="tag-code"><section></span></td>
+                            <td>Defines a section</td>
+                            <td><code><section>Content</section></code></td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         </article>
 
         <!-- Section 4: Text Formatting -->
-        <article class="card shadow-sm border-0 mb-4">
-            <section class="card-body p-4">
-                <h2 class="h5 border-bottom pb-2 mb-3 d-flex align-items-center text-dark fw-semibold">
-                    <span class="fs-4 me-2">✍️</span> Text Formatting
-                </h2>
-                
-                <section class="bg-light border border-secondary-subtle rounded p-4" style="border-style: dashed !important;">
-                    <h1 class="mb-3 text-dark">This is an H1 heading</h1>
-                    <h2 class="mb-3 text-secondary">Heading 2 Example</h2>
-                    <p class="mb-3">This is a standard paragraph with <strong>bold</strong>, <em>italic</em>, <u>underlined</u>, and <code class="text-danger">code</code> text.</p>
-                    <p class="mb-2"><strong>List Examples:</strong></p>
-                    <ul class="mb-3">
+        <article class="card mb-4 shadow-sm border-0">
+            <header class="card-header bg-white pt-3 border-bottom-0">
+                <h2 class="h5 fw-bold mb-0"><span class="me-2">✍️</span> Text Formatting</h2>
+            </header>
+            <section class="card-body pt-2">
+                <h3 class="visually-hidden">Contoh Format Teks</h3>
+                <aside class="p-3 border rounded bg-white">
+                    <h4 class="visually-hidden">Tampilan Visual</h4>
+                    <p class="display-6 fw-bold">This is an H1 heading style</p>
+                    <p class="h3 fw-bold">Heading 2 Example</p>
+                    <p>This is a standard paragraph with <strong>bold</strong>, <em>italic</em>, <u>underlined</u>, and <code>code</code> text.</p>
+                    <p class="fw-bold mb-1">List Examples:</p>
+                    <ul>
                         <li>Bullet point 1</li>
                         <li>Bullet point 2</li>
                     </ul>
@@ -170,78 +155,82 @@
                         <li>Numbered item 1</li>
                         <li>Numbered item 2</li>
                     </ol>
-                </section>
+                </aside>
             </section>
         </article>
 
         <!-- Section 5: HTML Forms -->
-        <article class="card shadow-sm border-0 mb-4">
-            <section class="card-body p-4">
-                <h2 class="h5 border-bottom pb-2 mb-3 d-flex align-items-center text-dark fw-semibold">
-                    <span class="fs-4 me-2">📝</span> HTML Forms
-                </h2>
-                <p class="text-secondary mb-3">Forms are used to collect user input:</p>
+        <article class="card mb-4 shadow-sm border-0">
+            <header class="card-header bg-white pt-3 border-bottom-0">
+                <h2 class="h5 fw-bold mb-0"><span class="me-2">📝</span> HTML Forms</h2>
+            </header>
+            <section class="card-body pt-2">
+                <h3 class="visually-hidden">Formulir Input</h3>
+                <p>Forms are used to collect user input:</p>
 
-                <figure class="position-relative bg-dark text-light p-3 rounded mb-4 overflow-auto shadow-inner">
-                    <span class="badge bg-secondary position-absolute top-0 end-0 m-2 text-uppercase">HTML</span>
-<pre class="mb-0 font-monospace text-light"><code>&lt;form action="/submit" method="post"&gt;
-  &lt;label for="name"&gt;Name:&lt;/label&gt;
-  &lt;input type="text" id="name" name="name"&gt;
-  &lt;button type="submit"&gt;Submit&lt;/button&gt;
-&lt;/form&gt;</code></pre>
+                <figure class="code-box mb-4">
+                    <figcaption><span class="badge text-bg-secondary mb-2">HTML</span></figcaption>
+<pre class="m-0"><code><form action="/submit" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+  <button type="submit">Submit</button>
+</form></code></pre>
                 </figure>
 
-                <section class="bg-light p-4 rounded border">
-                    <h4 class="h5 mb-3 text-dark fw-bold">Contact Us</h4>
+                <section class="p-4 border rounded bg-white">
+                    <h4 class="h5 fw-bold mb-3">Contact Us</h4>
                     <form onsubmit="return false;">
-                        <fieldset class="mb-3 border-0 p-0 m-0">
-                            <label class="form-label fw-medium">Name:</label>
-                            <input type="text" class="form-control" placeholder="Enter your name">
-                        </fieldset>
-                        <fieldset class="mb-3 border-0 p-0 m-0">
-                            <label class="form-label fw-medium">Email:</label>
-                            <input type="email" class="form-control" placeholder="Enter your email">
-                        </fieldset>
-                        <fieldset class="mb-3 border-0 p-0 m-0">
-                            <label class="form-label fw-medium">Subject:</label>
-                            <select class="form-select">
-                                <option>Select a subject</option>
-                                <option>General Inquiry</option>
-                                <option>Support</option>
+                        <p class="mb-3">
+                            <label for="inputName" class="form-label fw-medium">Name:</label>
+                            <input type="text" id="inputName" class="form-control" placeholder="Enter your name" required>
+                        </p>
+                        <p class="mb-3">
+                            <label for="inputEmail" class="form-label fw-medium">Email:</label>
+                            <input type="email" id="inputEmail" class="form-control" placeholder="Enter your email" required>
+                        </p>
+                        <p class="mb-3">
+                            <label for="selectSubject" class="form-label fw-medium">Subject:</label>
+                            <select id="selectSubject" class="form-select">
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Support</option>
                             </select>
-                        </fieldset>
-                        <fieldset class="mb-3 border-0 p-0 m-0">
-                            <label class="form-label fw-medium">Message:</label>
-                            <textarea class="form-control" rows="4" placeholder="Type your message here..."></textarea>
-                        </fieldset>
-                        <button class="btn btn-primary w-100 fw-semibold py-2">Submit Form</button>
+                        </p>
+                        <p class="mb-3">
+                            <label for="inputMessage" class="form-label fw-medium">Message:</label>
+                            <textarea id="inputMessage" class="form-control" rows="3" placeholder="Type your message here..." required></textarea>
+                        </p>
+                        <p class="mb-0">
+                            <button type="submit" class="btn btn-primary w-100 fw-bold">Submit Form</button>
+                        </p>
                     </form>
                 </section>
             </section>
         </article>
 
         <!-- Section 6: HTML Attributes -->
-        <article class="card shadow-sm border-0 mb-4">
-            <section class="card-body p-4">
-                <h2 class="h5 border-bottom pb-2 mb-3 d-flex align-items-center text-dark fw-semibold">
-                    <span class="fs-4 me-2">🏷️</span> HTML Attributes
-                </h2>
-                <p class="text-secondary mb-3">Attributes provide additional information about elements:</p>
+        <article class="card mb-4 shadow-sm border-0">
+            <header class="card-header bg-white pt-3 border-bottom-0">
+                <h2 class="h5 fw-bold mb-0"><span class="me-2">🏷️</span> HTML Attributes</h2>
+            </header>
+            <section class="card-body pt-2">
+                <h3 class="visually-hidden">Atribut HTML</h3>
+                <p>Attributes provide additional information about elements:</p>
 
-                <figure class="position-relative bg-dark text-light p-3 rounded mb-4 overflow-auto shadow-inner">
-                    <span class="badge bg-secondary position-absolute top-0 end-0 m-2 text-uppercase">HTML</span>
-<pre class="mb-0 font-monospace text-light"><code>&lt;a href="https://example.com" target="_blank" class="btn"&gt;Visit Site&lt;/a&gt;
-&lt;img src="image.jpg" alt="Description" width="300" height="200"&gt;</code></pre>
+                <figure class="code-box mb-3">
+                    <figcaption><span class="badge text-bg-secondary mb-2">HTML</span></figcaption>
+<pre class="m-0"><code><a href="https://example.com" target="_blank" class="btn">Visit Site</a>
+<img src="image.jpg" alt="Description" width="300" height="200"></code></pre>
                 </figure>
 
-                <aside class="alert alert-info border-start border-info border-4 mb-0" role="alert">
-                    <h4 class="h6 text-info-emphasis fw-bold">Common Attributes:</h4>
-                    <ul class="mb-0 text-info-emphasis">
-                        <li class="mb-1"><span class="tag-code">href</span> Specifies the URL for a link</li>
-                        <li class="mb-1"><span class="tag-code">src</span> Specifies the path to an image</li>
-                        <li class="mb-1"><span class="tag-code">alt</span> Specifies alternate text for an image</li>
-                        <li class="mb-1"><span class="tag-code">class</span> Specifies class names for elements</li>
-                        <li class="mb-1"><span class="tag-code">id</span> Specifies unique id for an element</li>
+                <aside class="alert alert-info border-start border-4 border-info bg-light mb-0">
+                    <h4 class="h6 fw-bold">Common Attributes:</h4>
+                    <ul class="mb-0">
+                        <li><span class="tag-code">href</span> Specifies the URL for a link</li>
+                        <li><span class="tag-code">src</span> Specifies the path to an image</li>
+                        <li><span class="tag-code">alt</span> Specifies alternate text for an image</li>
+                        <li><span class="tag-code">class</span> Specifies class names for elements</li>
+                        <li><span class="tag-code">id</span> Specifies unique id for an element</li>
                         <li><span class="tag-code">style</span> Specifies inline CSS styles</li>
                     </ul>
                 </aside>
@@ -249,70 +238,68 @@
         </article>
 
         <!-- Section 7: Media in HTML -->
-        <article class="card shadow-sm border-0 mb-4">
-            <section class="card-body p-4">
-                <h2 class="h5 border-bottom pb-2 mb-3 d-flex align-items-center text-dark fw-semibold">
-                    <span class="fs-4 me-2">🖼️</span> Media in HTML
-                </h2>
-                <p class="text-secondary mb-3">HTML supports various media elements:</p>
+        <article class="card mb-4 shadow-sm border-0">
+            <header class="card-header bg-white pt-3 border-bottom-0">
+                <h2 class="h5 fw-bold mb-0"><span class="me-2">🖼️</span> Media in HTML</h2>
+            </header>
+            <section class="card-body pt-2">
+                <h3 class="visually-hidden">Media dan Multimedia</h3>
+                <p>HTML supports various media elements:</p>
 
-                <figure class="position-relative bg-dark text-light p-3 rounded mb-4 overflow-auto shadow-inner">
-                    <span class="badge bg-secondary position-absolute top-0 end-0 m-2 text-uppercase">HTML</span>
-<pre class="mb-0 font-monospace text-light"><code>&lt;img src="pic.jpg" alt="Picture"&gt;
-&lt;audio controls&gt;&lt;source src="audio.mp3" type="audio/mpeg"&gt;&lt;/audio&gt;
-&lt;video width="320" height="240" controls&gt;&lt;source src="movie.mp4"&gt;&lt;/video&gt;</code></pre>
+                <figure class="code-box mb-3">
+                    <figcaption><span class="badge text-bg-secondary mb-2">HTML</span></figcaption>
+<pre class="m-0"><code><img src="pic.jpg" alt="Picture">
+<audio controls><source src="audio.mp3" type="audio/mpeg"></audio>
+<video width="320" height="240" controls><source src="movie.mp4"></video></code></pre>
                 </figure>
 
-                <figure class="table-responsive m-0">
-                    <table class="table table-hover align-middle mb-0">
-                        <thead class="table-light">
-                            <tr>
-                                <th>Media</th>
-                                <th>Tag</th>
-                                <th>Attr</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Images</td>
-                                <td><span class="tag-code">&lt;img&gt;</span></td>
-                                <td>src, alt</td>
-                                <td><span class="badge rounded-pill bg-success">✔ Active</span></td>
-                            </tr>
-                            <tr>
-                                <td>Audio</td>
-                                <td><span class="tag-code">&lt;audio&gt;</span></td>
-                                <td>src, controls</td>
-                                <td><span class="badge rounded-pill bg-success">✔ Active</span></td>
-                            </tr>
-                            <tr>
-                                <td>Video</td>
-                                <td><span class="tag-code">&lt;video&gt;</span></td>
-                                <td>src, controls</td>
-                                <td><span class="badge rounded-pill bg-success">✔ Active</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </figure>
+                <table class="table table-bordered table-striped m-0">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col">Media</th>
+                            <th scope="col">Tag</th>
+                            <th scope="col">Attr</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Images</td>
+                            <td><span class="tag-code"><img></span></td>
+                            <td>src, alt</td>
+                            <td><span class="badge bg-success">✔ Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>Audio</td>
+                            <td><span class="tag-code"><audio></span></td>
+                            <td>src, controls</td>
+                            <td><span class="badge bg-success">✔ Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>Video</td>
+                            <td><span class="tag-code"><video></span></td>
+                            <td>src, controls</td>
+                            <td><span class="badge bg-success">✔ Active</span></td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         </article>
 
-        <!-- Section 8: Practical Examples (Styled distinctly using utility classes) -->
-        <article class="card shadow-sm border-0 mb-4 border-start border-danger border-4" style="background: linear-gradient(to bottom right, #ffffff, #fff0f6);">
-            <section class="card-body p-4">
-                <h2 class="h5 border-bottom pb-2 mb-3 d-flex align-items-center text-dark fw-semibold">
-                    <span class="fs-4 me-2">💡</span> Practical Examples
-                </h2>
-                
-                <h4 class="h6 text-danger mt-3 mb-2 fw-bold">Common Tasks:</h4>
-                <ul class="mb-4">
-                    <li>Creating a navigation bar using <span class="tag-code">&lt;nav&gt;</span> and <span class="tag-code">&lt;ul&gt;</span></li>
+        <!-- Section 8: Practical Examples -->
+        <article class="card mb-4 shadow-sm border-0 border-top border-4 border-danger">
+            <header class="card-header bg-white pt-3 border-bottom-0">
+                <h2 class="h5 fw-bold text-danger mb-0"><span class="me-2">💡</span> Practical Examples</h2>
+            </header>
+            <section class="card-body pt-2">
+                <h3 class="h6 fw-bold">Common Tasks:</h3>
+                <ul>
+                    <li>Creating a navigation bar using <span class="tag-code"><nav></span> and <span class="tag-code"><ul></span></li>
                     <li>Building a simple contact form</li>
                     <li>Making a responsive card layout</li>
                 </ul>
 
-                <h4 class="h6 text-danger mb-2 fw-bold">Best Practices:</h4>
+                <h3 class="h6 fw-bold mt-4">Best Practices:</h3>
                 <ul class="mb-0">
                     <li>Always use semantic HTML tags</li>
                     <li>Include <span class="tag-code">alt</span> attributes for images</li>
@@ -323,15 +310,16 @@
         </article>
 
         <!-- Section 9: Project Structure -->
-        <article class="card shadow-sm border-0 mb-4">
-            <section class="card-body p-4">
-                <h2 class="h5 border-bottom pb-2 mb-3 d-flex align-items-center text-dark fw-semibold">
-                    <span class="fs-4 me-2">📁</span> Project Structure
-                </h2>
-                <p class="text-secondary mb-3">Recommended folder layout for web projects:</p>
+        <article class="card mb-4 shadow-sm border-0">
+            <header class="card-header bg-white pt-3 border-bottom-0">
+                <h2 class="h5 fw-bold mb-0"><span class="me-2">📁</span> Project Structure</h2>
+            </header>
+            <section class="card-body pt-2">
+                <h3 class="visually-hidden">Struktur Folder</h3>
+                <p>Recommended folder layout for web projects:</p>
 
-                <figure class="position-relative bg-dark text-light p-3 rounded mb-0 overflow-auto shadow-inner">
-<pre class="mb-0 font-monospace text-light"><code>project-folder/
+                <figure class="code-box mb-0">
+<pre class="m-0"><code>project-folder/
 ├── index.html
 ├── css/
 │   └── styles.css
@@ -344,29 +332,31 @@
             </section>
         </article>
 
-        <!-- Section 10: Next Steps in Your Learning Journey -->
-        <aside class="alert mb-4 shadow-sm" style="border: 1px solid #90cdf4; border-left: 4px solid #3182ce; background: linear-gradient(135deg, #e6fffa 0%, #fff5f5 100%); padding: 1.25rem; border-radius: 0.75rem;">
-            <header class="d-flex align-items-center fw-bold mb-2" style="color: #2b6cb0; font-size: 1rem;">
-                <span class="me-2">🎯</span> Next Steps in Your Learning Journey
+        <!-- Section 10: Next Steps -->
+        <aside class="alert alert-primary border-start border-4 border-primary bg-white shadow-sm mb-4">
+            <header class="d-flex align-items-center mb-2">
+                <span class="fs-4 me-2">🎯</span>
+                <h2 class="h6 fw-bold text-primary mb-0">Next Steps in Your Learning Journey</h2>
             </header>
-            <p class="fw-semibold mb-2" style="font-size: 0.875rem; color: #2d3748;">Recommended path:</p>
-            <ul class="mb-0 ps-3" style="font-size: 0.875rem; color: #4a5568;">
-                <li class="mb-1">Master CSS for styling and page layout</li>
-                <li class="mb-1">Learn JavaScript to add interactivity</li>
-                <li class="mb-1">Explore responsive web design principles</li>
+            <p class="fw-semibold text-dark mb-2 small">Recommended path:</p>
+            <ul class="mb-0 small text-secondary">
+                <li>Master CSS for styling and page layout</li>
+                <li>Learn JavaScript to add interactivity</li>
+                <li>Explore responsive web design principles</li>
                 <li>Build real-world projects to solidify skills</li>
             </ul>
         </aside>
 
         <!-- Section 11: Developer Tools -->
-        <article class="card shadow-sm border-0 mb-5">
-            <section class="card-body p-4">
-                <h2 class="h5 border-bottom pb-2 d-flex align-items-center text-dark fw-semibold mb-3">
-                    <span class="fs-4 me-2">🔧</span> Developer Tools
-                </h2>
-                <aside class="alert alert-info border-start border-info border-4 mb-0" role="alert">
-                    <h4 class="h6 text-info-emphasis fw-bold">Recommended Tools:</h4>
-                    <ul class="mb-0 text-info-emphasis">
+        <article class="card mb-4 shadow-sm border-0">
+            <header class="card-header bg-white pt-3 border-bottom-0">
+                <h2 class="h5 fw-bold mb-0"><span class="me-2">🔧</span> Developer Tools</h2>
+            </header>
+            <section class="card-body pt-2">
+                <h3 class="visually-hidden">Alat Developer</h3>
+                <aside class="alert alert-info border-start border-4 border-info bg-light mb-0">
+                    <h4 class="h6 fw-bold">Recommended Tools:</h4>
+                    <ul class="mb-0">
                         <li>Code Editor (VS Code, Sublime Text)</li>
                         <li>Browser Developer Tools (F12)</li>
                         <li>HTML Validators (W3C)</li>
@@ -377,17 +367,14 @@
         </article>
 
         <!-- Footer / Summary -->
-        <footer class="p-4 p-md-5 bg-dark bg-gradient text-white rounded-4 shadow text-center mt-5">
-            <h3 class="h4 mb-3 d-flex align-items-center justify-content-center">
-                <span class="me-2">🌟</span> Summary & Conclusion
-            </h3>
-            <p class="text-white-50 fs-5 mb-3">HTML is the backbone of web development. Master these concepts and you'll have a solid foundation for learning CSS and JavaScript!</p>
-            <p class="fw-semibold mb-0">Keep practicing, build projects, and keep learning!</p>
+        <footer class="text-center p-4 bg-dark text-light rounded shadow-sm">
+            <h2 class="h4 fw-bold mb-3"><span class="me-2">🌟</span> Summary & Conclusion</h2>
+            <p class="mb-2">HTML is the backbone of web development. Master these concepts and you'll have a solid foundation for learning CSS and JavaScript!</p>
+            <p class="fw-bold mb-0 text-warning">Keep practicing, build projects, and keep learning!</p>
         </footer>
 
     </main>
 
-    <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
